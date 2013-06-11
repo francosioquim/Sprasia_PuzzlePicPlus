@@ -77,7 +77,7 @@ function initLayout() {
 	       $("#size-stylesheet").attr("href", "css/wide-landscape.css"); 
 	    }
 	}
-	$('#wrapper').css('background-size','auto '+window.screen.availHeight+'px');
+	$('.wrapper').css('background-size','auto '+window.screen.availHeight+'px');
 }
 
 $(function() {

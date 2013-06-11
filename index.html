@@ -1,24 +1,118 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <meta name="viewport" content="width=screen.width; user-scalable=no" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <link rel="stylesheet" rel="stylesheet" type="text/css" href="css/jquery.mobile-1.1.0-rc.1.min.css" />
     <link id="size-stylesheet" rel="stylesheet" type="text/css" href="css/narrow.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery.mobile-1.3.1.js"></script>
+    <script src="phonegap.0.9.4.js"></script>
     <script src="js/layout.js"></script>
     <script src="js/splash.js"></script>
-    <script src="js/jquery.mobile-1.3.1.js"></script>
+
     <!--<script src="js/cordova-2.7.0.js"></script>-->
-
-
-<meta charset="utf-8">
 <title>PuzzlePic</title>
 </head>
-
+ <!--
 <body onload="loadSplashscreen()">
+   
     <div id="splashscreen">
         <a onclick="document.location.href = 'main.html';" data-transition="fade">
         <img id="sprlogo" src="images/sprlogo.png" width="250px">
         </a>
     </div>
+</body>
+-->
+<body>
+        <!-- Main Menu -->
+        <div data-role="page" id="mainmenu" class="wrapper">
+            <div id="logo"></div>
+            <div id="buttonlist" data-role="controlgroup" data-type="horizontal">
+                <ul>
+                    <li id="btn-start" class="button"> 
+                        <a href="#startmenu" data-transition="slide"><div class="generic_linker"></div></a>
+                    </li>
+                    <li id="btn-gallery" class="button"> 
+                        <a href="gallery.html" data-transition="slide" ><div class="generic_linker"></div></a>
+                    </li>
+                    <li id="btn-highscores" class="button">
+                        <a href="highscore.html" data-transition="slide" ><div class="generic_linker"></div></a>
+                    </li>
+                </ul>
+            </div>
+        </div><!--End Wrapper-->
+
+        <!-- Start Menu -->
+        <div data-role="page" id="startmenu" class="wrapper">
+            <div id="logo"></div>
+            <div id="buttonlist" data-role="controlgroup" data-type="horizontal">
+                <ul>
+                    <li id="btn-normal" class="button"> 
+                        <a href="play_normal.html" data-transition="slide"><div class="generic_linker"></div></a>
+                    </li>
+                    <li id="btn-hard" class="button"> 
+                        <a href="play_hard.html" data-transition="slide" ><div class="generic_linker"></div></a>
+                    </li>
+                    <li id="btn-back" class="button">
+                        <a href="#mainmenu" data-transition="slide" ><div class="generic_linker"></div></a>
+                    </li>
+                </ul>
+            </div>
+        </div><!--End Wrapper-->
+
+        <!-- Gallery -->
+        <div data-role="page" id="gallery" class="wrapper">
+                    <div  data-role="controlgroup" data-type="horizontal">
+                        <a href="main.html" data-transition="slide" ><div id="main-menu"></div></a>
+                    </div>
+                    <div id="header-board">
+                        <div id="header-title">
+                            <span id="header">Gallery</span>
+                        </div>
+                        <div id="gallery-content">
+                            <div class="gallery-image">
+                                <a href="plugins/lightbox2-master/images/examples/image-1.jpg" rel="lightbox"><img src="plugins/lightbox2-master/images/examples/thumb-1.jpg" alt="" /></a>
+                            </div>
+                            <div class="gallery-image">
+                                <a href="plugins/lightbox2-master/images/examples/image-1.jpg" rel="lightbox"><img src="plugins/lightbox2-master/images/examples/thumb-1.jpg" alt="" /></a>
+                            </div>
+                            <div class="gallery-image">
+                                <a href="plugins/lightbox2-master/images/examples/image-1.jpg" rel="lightbox"><img src="plugins/lightbox2-master/images/examples/thumb-1.jpg" alt="" /></a>
+                            </div>
+                            <div class="gallery-image">
+                                <a href="plugins/lightbox2-master/images/examples/image-1.jpg" rel="lightbox"><img src="plugins/lightbox2-master/images/examples/thumb-1.jpg" alt="" /></a>
+                            </div>
+                            <div class="gallery-image">
+                                <a href="plugins/lightbox2-master/images/examples/image-1.jpg" rel="lightbox"><img src="plugins/lightbox2-master/images/examples/thumb-1.jpg" alt="" /></a>
+                            </div>
+                            <div class="gallery-image">
+                                <a href="plugins/lightbox2-master/images/examples/image-1.jpg" rel="lightbox"><img src="plugins/lightbox2-master/images/examples/thumb-1.jpg" alt="" /></a>
+                            </div>
+                            <div class="gallery-image">
+                                <a href="plugins/lightbox2-master/images/examples/image-1.jpg" rel="lightbox"><img src="plugins/lightbox2-master/images/examples/thumb-1.jpg" alt="" /></a>
+                            </div>
+                            <div class="gallery-image">
+                                <a href="plugins/lightbox2-master/images/examples/image-1.jpg" rel="lightbox"><img src="plugins/lightbox2-master/images/examples/thumb-1.jpg" alt="" /></a>
+                            </div>
+                            <div class="gallery-image">
+                                <a href="plugins/lightbox2-master/images/examples/image-1.jpg" rel="lightbox"><img src="plugins/lightbox2-master/images/examples/thumb-1.jpg" alt="" /></a>
+                            </div>
+                            <div class="gallery-image">
+                                <a href="plugins/lightbox2-master/images/examples/image-1.jpg" rel="lightbox"><img src="plugins/lightbox2-master/images/examples/thumb-1.jpg" alt="" /></a>
+                            </div>
+                            <div class="gallery-image">
+                                <a href="plugins/lightbox2-master/images/examples/image-1.jpg" rel="lightbox"><img src="plugins/lightbox2-master/images/examples/thumb-1.jpg" alt="" /></a>
+                            </div>
+                            <div class="gallery-image">
+                                <a href="plugins/lightbox2-master/images/examples/image-1.jpg" rel="lightbox"><img src="plugins/lightbox2-master/images/examples/thumb-1.jpg" alt="" /></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div><!--End Wrapper-->
+
 </body>
 </html>

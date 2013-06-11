@@ -25,7 +25,7 @@ header {
 footer {
 	display: none;
 }
-#wrapper {
+.wrapper {
 	background: url("../images/narrow/background.png") repeat-x top center;
 }
 /*
