@@ -36,10 +36,10 @@
                         <a href="#startmenu" data-transition="slide"><div class="generic_linker"></div></a>
                     </li>
                     <li id="btn-gallery" class="button"> 
-                        <a href="gallery.html" data-transition="slide" ><div class="generic_linker"></div></a>
+                        <a href="#gallery" data-transition="slide" ><div class="generic_linker"></div></a>
                     </li>
                     <li id="btn-highscores" class="button">
-                        <a href="highscore.html" data-transition="slide" ><div class="generic_linker"></div></a>
+                        <a href="#highscore" data-transition="slide" ><div class="generic_linker"></div></a>
                     </li>
                 </ul>
             </div>
@@ -51,10 +51,10 @@
             <div id="buttonlist" data-role="controlgroup" data-type="horizontal">
                 <ul>
                     <li id="btn-normal" class="button"> 
-                        <a href="play_normal.html" data-transition="slide"><div class="generic_linker"></div></a>
+                        <a href="play_normal.html" rel="external"><div class="generic_linker"></div></a>
                     </li>
                     <li id="btn-hard" class="button"> 
-                        <a href="play_hard.html" data-transition="slide" ><div class="generic_linker"></div></a>
+                        <a href="play_hard.html" rel="external"><div class="generic_linker"></div></a>
                     </li>
                     <li id="btn-back" class="button">
                         <a href="#mainmenu" data-transition="slide" ><div class="generic_linker"></div></a>
@@ -66,7 +66,7 @@
         <!-- Gallery -->
         <div data-role="page" id="gallery" class="wrapper">
                     <div  data-role="controlgroup" data-type="horizontal">
-                        <a href="main.html" data-transition="slide" ><div id="main-menu"></div></a>
+                        <a href="#mainmenu" data-transition="slide" ><div id="main-menu"></div></a>
                     </div>
                     <div id="header-board">
                         <div id="header-title">
@@ -114,5 +114,23 @@
                     </div>
                 </div><!--End Wrapper-->
 
+                <div data-role="page" id="highscore" class="wrapper">
+                    <div  data-role="controlgroup" data-type="horizontal">
+                        <a  href="#mainmenu"  data-transition="slide" ><div id="main-menu"></div></a>
+                    <div id="header-board">
+                        <div id="header-title">
+                            <span id="header">High Scores:</span>
+                        </div>
+                        <div id="inner-content">
+                            <ul>
+                                <li>1. Maricel</li>
+                                <li>2. Mark</li>
+                                <li>3. Daryl</li>
+                                <li>4. Franco</li>
+                                <li>5. Mark</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!--End Wrapper-->
 </body>
 </html>
