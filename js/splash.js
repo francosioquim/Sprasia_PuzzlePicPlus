@@ -11,5 +11,6 @@ function deviceReady() {
 }
     
 function removeSplashScreen() {
-    document.addEventListener("deviceready", deviceReady, true);    
+	deviceReady();
+    //document.addEventListener("deviceready", deviceReady, true);    
 }
