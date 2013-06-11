@@ -1,6 +1,6 @@
 var load_once = 0;
 
-function removeSplashScreen() {
+function deviceReady() {
 	if (load_once == 0) {
 		setTimeout(function() {
 		$('#splashscreen').fadeOut('slow');
@@ -9,4 +9,7 @@ function removeSplashScreen() {
 	}
 
 }
- 
+    
+function removeSplashScreen() {
+    document.addEventListener("deviceready", deviceReady, true);    
+}
